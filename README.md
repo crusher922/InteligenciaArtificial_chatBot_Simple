@@ -33,3 +33,4 @@ Este proyecto fue desarrollado como parte de la asignatura de **Inteligencia Art
 ## Arquitectura del sistema
 
 El funcionamiento del chatbot sigue el siguiente flujo:
+Datos → Preprocesamiento → Vectorización → Modelo → Evaluación → Motor de respuestas → Interfaz chatbot

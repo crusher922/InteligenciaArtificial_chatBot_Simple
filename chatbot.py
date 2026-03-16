@@ -25,7 +25,21 @@ def predict_intent(message, model, vectorizer):
 def chatbot():
     model, vectorizer, responses = load_artifacts()
 
-    print("Chatbot iniciado. Escribe 'salir' para terminar.\n")
+    print("======================================")
+    print("🤖 Asistente virtual de la Escuela de Programación")
+    print("======================================")
+    print("Hola, soy el asistente virtual de la Escuela de Programación.")
+    print("Estoy aquí para brindarte información sobre:")
+    print("- Cursos disponibles")
+    print("- Horarios de atención")
+    print("- Contacto de la escuela")
+    print()
+    print("Puedes hacerme preguntas como:")
+    print("• ¿Qué cursos ofrecen?")
+    print("• ¿Cuál es el horario?")
+    print("• ¿Cómo puedo contactarlos?")
+    print()
+    print("Escribe 'salir' para terminar la conversación.\n")
 
     while True:
         user_input = input("Tú: ").strip()

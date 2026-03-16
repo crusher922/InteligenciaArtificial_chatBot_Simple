@@ -1,0 +1,9 @@
+2026-03-15 21:57:47,191 | INFO | Cargando y preparando datos.
+2026-03-15 21:57:47,193 | INFO | Entrenando modelo MultinomialNB.
+2026-03-15 21:57:47,195 | INFO | Modelo, vectorizador y respuestas guardados.
+2026-03-15 21:57:57,635 | INFO | Inicio de evaluación del modelo.
+2026-03-15 21:57:57,643 | INFO | Evaluación completada y resultados guardados.
+2026-03-15 21:58:14,100 | INFO | Chatbot iniciado correctamente.
+2026-03-15 21:58:17,554 | INFO | Entrada usuario: hola | Intención detectada: saludo
+2026-03-15 21:58:27,954 | INFO | Entrada usuario: que cursos ofrecen | Intención detectada: cursos
+2026-03-15 21:58:34,880 | INFO | Usuario finalizó la conversación.

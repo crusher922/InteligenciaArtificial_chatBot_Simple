@@ -3,9 +3,11 @@ from pathlib import Path
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 from preprocess import prepare_data
 from train_model import MODEL_PATH, VECTORIZER_PATH
-
-
-BASE_DIR = Path(__file__).resolve().parent
+from logger_utils import (
+    log_event,
+    log_error,
+    save_validation_results
+)
 
 
 def load_artifacts():
@@ -19,44 +21,56 @@ def load_artifacts():
 
 
 def evaluate_model():
-    data = prepare_data()
-    model, vectorizer = load_artifacts()
+    try:
+        log_event("Inicio de evaluación del modelo.")
 
-    X_test = vectorizer.transform(data["X_test_texts"])
-    y_pred = model.predict(X_test)
+        data = prepare_data(test_size=0.3, random_state=42)
+        model, vectorizer = load_artifacts()
 
-    accuracy = accuracy_score(data["y_test"], y_pred)
-    matrix = confusion_matrix(data["y_test"], y_pred, labels=sorted(set(data["y_test"])))
-    report = classification_report(data["y_test"], y_pred)
+        X_test = vectorizer.transform(data["X_test_texts"])
+        y_pred = model.predict(X_test)
 
-    print("===== EVALUACIÓN DEL MODELO =====")
-    print(f"Accuracy del modelo: {accuracy:.2f}\n")
+        accuracy = accuracy_score(data["y_test"], y_pred)
+        labels = sorted(set(data["y_test"]))
+        matrix = confusion_matrix(data["y_test"], y_pred, labels=labels)
+        report = classification_report(data["y_test"], y_pred, output_dict=True)
 
-    print("Etiquetas:", sorted(set(data["y_test"])))
-    print("\nMatriz de confusión:")
-    print(matrix)
+        examples = []
+        errors = []
 
-    print("\nReporte de clasificación:")
-    print(report)
+        for text, real, pred in zip(data["X_test_texts"], data["y_test"], y_pred):
+            item = {
+                "text": text,
+                "real": real,
+                "predicted": pred
+            }
+            examples.append(item)
 
-    print("\n===== EJEMPLOS DE PREDICCIÓN =====")
-    for text, real, pred in zip(data["X_test_texts"], data["y_test"], y_pred):
-        print(f"Texto: '{text}'")
-        print(f"Etiqueta real: {real}")
-        print(f"Predicción: {pred}")
-        print("-" * 40)
+            if real != pred:
+                errors.append(item)
 
-    print("\n===== ERRORES DEL MODELO =====")
-    has_errors = False
-    for text, real, pred in zip(data["X_test_texts"], data["y_test"], y_pred):
-        if real != pred:
-            has_errors = True
-            print(f"Texto: '{text}'")
-            print(f"Real: {real} | Predicho: {pred}")
-            print("-" * 40)
+        validation_data = {
+            "accuracy": accuracy,
+            "labels": labels,
+            "confusion_matrix": matrix.tolist(),
+            "classification_report": report,
+            "examples": examples,
+            "errors": errors
+        }
 
-    if not has_errors:
-        print("No hubo errores en este conjunto de prueba.")
+        save_validation_results(validation_data)
+        log_event("Evaluación completada y resultados guardados.")
+
+        print("===== EVALUACIÓN DEL MODELO =====")
+        print(f"Accuracy del modelo: {accuracy:.2f}\n")
+        print("Etiquetas:", labels)
+        print("\nMatriz de confusión:")
+        print(matrix)
+        print("\nErrores detectados:", len(errors))
+
+    except Exception as e:
+        log_error(f"Error durante la evaluación: {str(e)}")
+        print("Ocurrió un error durante la evaluación. Revisa logs/errors.log")
 
 
 if __name__ == "__main__":

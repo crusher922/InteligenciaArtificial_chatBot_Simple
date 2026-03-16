@@ -1,0 +1,651 @@
+{
+    "accuracy": 0.7205882352941176,
+    "labels": [
+        "agradecimiento",
+        "certificacion",
+        "contacto",
+        "cursos",
+        "despedida",
+        "horario",
+        "inscripcion",
+        "precios",
+        "saludo",
+        "soporte"
+    ],
+    "confusion_matrix": [
+        [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            2,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        [
+            0,
+            0,
+            6,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            1,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            1,
+            0,
+            0,
+            0,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0,
+            6,
+            0,
+            1,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            1,
+            2,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            7,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            5
+        ]
+    ],
+    "classification_report": {
+        "agradecimiento": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1-score": 0.8888888888888888,
+            "support": 4.0
+        },
+        "certificacion": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 4.0
+        },
+        "contacto": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1-score": 0.75,
+            "support": 8.0
+        },
+        "cursos": {
+            "precision": 0.4,
+            "recall": 0.8888888888888888,
+            "f1-score": 0.5517241379310345,
+            "support": 9.0
+        },
+        "despedida": {
+            "precision": 0.875,
+            "recall": 0.875,
+            "f1-score": 0.875,
+            "support": 8.0
+        },
+        "horario": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1-score": 0.8571428571428571,
+            "support": 8.0
+        },
+        "inscripcion": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 6.0
+        },
+        "precios": {
+            "precision": 0.5,
+            "recall": 0.16666666666666666,
+            "f1-score": 0.25,
+            "support": 6.0
+        },
+        "saludo": {
+            "precision": 0.875,
+            "recall": 0.7777777777777778,
+            "f1-score": 0.8235294117647058,
+            "support": 9.0
+        },
+        "soporte": {
+            "precision": 0.8333333333333334,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8333333333333334,
+            "support": 6.0
+        },
+        "accuracy": 0.7205882352941176,
+        "macro avg": {
+            "precision": 0.8033333333333333,
+            "recall": 0.7041666666666666,
+            "f1-score": 0.7162951962394153,
+            "support": 68.0
+        },
+        "weighted avg": {
+            "precision": 0.7893382352941176,
+            "recall": 0.7205882352941176,
+            "f1-score": 0.7199506915680404,
+            "support": 68.0
+        }
+    },
+    "examples": [
+        {
+            "text": "hasta que hora atienden",
+            "real": "horario",
+            "predicted": "horario"
+        },
+        {
+            "text": "ok adios",
+            "real": "despedida",
+            "predicted": "despedida"
+        },
+        {
+            "text": "que horario tienen",
+            "real": "horario",
+            "predicted": "cursos"
+        },
+        {
+            "text": "te agradezco mucho",
+            "real": "agradecimiento",
+            "predicted": "agradecimiento"
+        },
+        {
+            "text": "no me deja entrar",
+            "real": "soporte",
+            "predicted": "soporte"
+        },
+        {
+            "text": "cual es su numero",
+            "real": "contacto",
+            "predicted": "contacto"
+        },
+        {
+            "text": "cual es el horario",
+            "real": "horario",
+            "predicted": "precios"
+        },
+        {
+            "text": "tienen precios accesibles",
+            "real": "precios",
+            "predicted": "cursos"
+        },
+        {
+            "text": "la pagina no carga",
+            "real": "soporte",
+            "predicted": "soporte"
+        },
+        {
+            "text": "ya estuvo gracias",
+            "real": "despedida",
+            "predicted": "agradecimiento"
+        },
+        {
+            "text": "hasta la proxima",
+            "real": "despedida",
+            "predicted": "despedida"
+        },
+        {
+            "text": "horario de atencion",
+            "real": "horario",
+            "predicted": "horario"
+        },
+        {
+            "text": "hola amigo",
+            "real": "saludo",
+            "predicted": "saludo"
+        },
+        {
+            "text": "necesito ayuda",
+            "real": "soporte",
+            "predicted": "saludo"
+        },
+        {
+            "text": "hola buen dia",
+            "real": "saludo",
+            "predicted": "saludo"
+        },
+        {
+            "text": "hay descuentos",
+            "real": "precios",
+            "predicted": "cursos"
+        },
+        {
+            "text": "cuanto es la matricula",
+            "real": "precios",
+            "predicted": "precios"
+        },
+        {
+            "text": "hay inscripcion online",
+            "real": "inscripcion",
+            "predicted": "cursos"
+        },
+        {
+            "text": "algo no funciona",
+            "real": "soporte",
+            "predicted": "soporte"
+        },
+        {
+            "text": "tengo un problema",
+            "real": "soporte",
+            "predicted": "soporte"
+        },
+        {
+            "text": "saludos",
+            "real": "saludo",
+            "predicted": "cursos"
+        },
+        {
+            "text": "como puedo comunicarme",
+            "real": "contacto",
+            "predicted": "contacto"
+        },
+        {
+            "text": "que puedo estudiar",
+            "real": "cursos",
+            "predicted": "cursos"
+        },
+        {
+            "text": "cuando puedo ir",
+            "real": "horario",
+            "predicted": "horario"
+        },
+        {
+            "text": "tienen planes de pago",
+            "real": "precios",
+            "predicted": "cursos"
+        },
+        {
+            "text": "bueno adios",
+            "real": "despedida",
+            "predicted": "despedida"
+        },
+        {
+            "text": "ofrecen cursos de desarrollo web",
+            "real": "cursos",
+            "predicted": "cursos"
+        },
+        {
+            "text": "ofrecen curso de machine learning",
+            "real": "cursos",
+            "predicted": "cursos"
+        },
+        {
+            "text": "hay cursos de ciencia de datos",
+            "real": "cursos",
+            "predicted": "cursos"
+        },
+        {
+            "text": "numero de telefono",
+            "real": "contacto",
+            "predicted": "cursos"
+        },
+        {
+            "text": "hola ahi",
+            "real": "saludo",
+            "predicted": "saludo"
+        },
+        {
+            "text": "ofrecen capacitaciones",
+            "real": "cursos",
+            "predicted": "cursos"
+        },
+        {
+            "text": "hay alguien con quien hablar",
+            "real": "contacto",
+            "predicted": "contacto"
+        },
+        {
+            "text": "hola estoy aqui",
+            "real": "saludo",
+            "predicted": "saludo"
+        },
+        {
+            "text": "gracias por todo adios",
+            "real": "despedida",
+            "predicted": "despedida"
+        },
+        {
+            "text": "no puedo ver el curso",
+            "real": "soporte",
+            "predicted": "soporte"
+        },
+        {
+            "text": "como puedo inscribirme en un curso",
+            "real": "inscripcion",
+            "predicted": "inscripcion"
+        },
+        {
+            "text": "listo gracias",
+            "real": "agradecimiento",
+            "predicted": "agradecimiento"
+        },
+        {
+            "text": "puedo usar el certificado en mi trabajo",
+            "real": "certificacion",
+            "predicted": "soporte"
+        },
+        {
+            "text": "buen dia como estan",
+            "real": "saludo",
+            "predicted": "saludo"
+        },
+        {
+            "text": "hasta luego gracias",
+            "real": "despedida",
+            "predicted": "despedida"
+        },
+        {
+            "text": "a que hora cierran",
+            "real": "horario",
+            "predicted": "horario"
+        },
+        {
+            "text": "hola",
+            "real": "saludo",
+            "predicted": "saludo"
+        },
+        {
+            "text": "el certificado tiene valor",
+            "real": "certificacion",
+            "predicted": "certificacion"
+        },
+        {
+            "text": "que necesito para inscribirme",
+            "real": "inscripcion",
+            "predicted": "inscripcion"
+        },
+        {
+            "text": "quiero empezar un curso",
+            "real": "inscripcion",
+            "predicted": "cursos"
+        },
+        {
+            "text": "tienen cursos gratis",
+            "real": "precios",
+            "predicted": "cursos"
+        },
+        {
+            "text": "quiero estudiar programacion",
+            "real": "cursos",
+            "predicted": "cursos"
+        },
+        {
+            "text": "donde puedo aprender programacion",
+            "real": "cursos",
+            "predicted": "contacto"
+        },
+        {
+            "text": "holi",
+            "real": "saludo",
+            "predicted": "cursos"
+        },
+        {
+            "text": "listo gracias adios",
+            "real": "despedida",
+            "predicted": "despedida"
+        },
+        {
+            "text": "excelente gracias",
+            "real": "agradecimiento",
+            "predicted": "agradecimiento"
+        },
+        {
+            "text": "a que hora abren",
+            "real": "horario",
+            "predicted": "horario"
+        },
+        {
+            "text": "me despido gracias",
+            "real": "despedida",
+            "predicted": "despedida"
+        },
+        {
+            "text": "tienen whatsapp",
+            "real": "contacto",
+            "predicted": "contacto"
+        },
+        {
+            "text": "tienen cursos de programacion",
+            "real": "cursos",
+            "predicted": "cursos"
+        },
+        {
+            "text": "hay precio especial para estudiantes",
+            "real": "precios",
+            "predicted": "cursos"
+        },
+        {
+            "text": "como los encuentro en instagram",
+            "real": "contacto",
+            "predicted": "cursos"
+        },
+        {
+            "text": "como llego a su oficina",
+            "real": "contacto",
+            "predicted": "contacto"
+        },
+        {
+            "text": "donde queda su oficina",
+            "real": "contacto",
+            "predicted": "contacto"
+        },
+        {
+            "text": "quiero inscribirme",
+            "real": "inscripcion",
+            "predicted": "inscripcion"
+        },
+        {
+            "text": "me dan algun diploma",
+            "real": "certificacion",
+            "predicted": "despedida"
+        },
+        {
+            "text": "gracias por responder",
+            "real": "agradecimiento",
+            "predicted": "agradecimiento"
+        },
+        {
+            "text": "hay clases disponibles",
+            "real": "cursos",
+            "predicted": "cursos"
+        },
+        {
+            "text": "como me inscribo",
+            "real": "inscripcion",
+            "predicted": "contacto"
+        },
+        {
+            "text": "desde que hora atienden",
+            "real": "horario",
+            "predicted": "horario"
+        },
+        {
+            "text": "que mas",
+            "real": "saludo",
+            "predicted": "saludo"
+        },
+        {
+            "text": "entregan certificados",
+            "real": "certificacion",
+            "predicted": "certificacion"
+        }
+    ],
+    "errors": [
+        {
+            "text": "que horario tienen",
+            "real": "horario",
+            "predicted": "cursos"
+        },
+        {
+            "text": "cual es el horario",
+            "real": "horario",
+            "predicted": "precios"
+        },
+        {
+            "text": "tienen precios accesibles",
+            "real": "precios",
+            "predicted": "cursos"
+        },
+        {
+            "text": "ya estuvo gracias",
+            "real": "despedida",
+            "predicted": "agradecimiento"
+        },
+        {
+            "text": "necesito ayuda",
+            "real": "soporte",
+            "predicted": "saludo"
+        },
+        {
+            "text": "hay descuentos",
+            "real": "precios",
+            "predicted": "cursos"
+        },
+        {
+            "text": "hay inscripcion online",
+            "real": "inscripcion",
+            "predicted": "cursos"
+        },
+        {
+            "text": "saludos",
+            "real": "saludo",
+            "predicted": "cursos"
+        },
+        {
+            "text": "tienen planes de pago",
+            "real": "precios",
+            "predicted": "cursos"
+        },
+        {
+            "text": "numero de telefono",
+            "real": "contacto",
+            "predicted": "cursos"
+        },
+        {
+            "text": "puedo usar el certificado en mi trabajo",
+            "real": "certificacion",
+            "predicted": "soporte"
+        },
+        {
+            "text": "quiero empezar un curso",
+            "real": "inscripcion",
+            "predicted": "cursos"
+        },
+        {
+            "text": "tienen cursos gratis",
+            "real": "precios",
+            "predicted": "cursos"
+        },
+        {
+            "text": "donde puedo aprender programacion",
+            "real": "cursos",
+            "predicted": "contacto"
+        },
+        {
+            "text": "holi",
+            "real": "saludo",
+            "predicted": "cursos"
+        },
+        {
+            "text": "hay precio especial para estudiantes",
+            "real": "precios",
+            "predicted": "cursos"
+        },
+        {
+            "text": "como los encuentro en instagram",
+            "real": "contacto",
+            "predicted": "cursos"
+        },
+        {
+            "text": "me dan algun diploma",
+            "real": "certificacion",
+            "predicted": "despedida"
+        },
+        {
+            "text": "como me inscribo",
+            "real": "inscripcion",
+            "predicted": "contacto"
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "input": {
+        "train_samples": 157,
+        "test_samples": 68,
+        "labels": [
+            "agradecimiento",
+            "certificacion",
+            "contacto",
+            "cursos",
+            "despedida",
+            "horario",
+            "inscripcion",
+            "precios",
+            "saludo",
+            "soporte"
+        ]
+    },
+    "output": {
+        "model_file": "model.pkl",
+        "vectorizer_file": "vectorizer.pkl",
+        "responses_file": "responses.pkl",
+        "checkpoint_model": "model_checkpoint.pkl",
+        "checkpoint_vectorizer": "vectorizer_checkpoint.pkl"
+    }
+}

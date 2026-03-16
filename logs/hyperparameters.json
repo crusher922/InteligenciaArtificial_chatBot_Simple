@@ -1,0 +1,9 @@
+{
+    "model": "MultinomialNB",
+    "test_size": 0.3,
+    "random_state": 42,
+    "vectorizer": {
+        "type": "TfidfVectorizer",
+        "lowercase": true
+    }
+}

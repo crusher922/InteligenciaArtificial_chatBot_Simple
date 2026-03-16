@@ -5,9 +5,9 @@ from preprocess import prepare_data
 
 
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_PATH = BASE_DIR / "models/model.pkl"
-VECTORIZER_PATH = BASE_DIR / "models/vectorizer.pkl"
-RESPONSES_PATH = BASE_DIR / "models/responses.pkl"
+MODEL_PATH = BASE_DIR / "model.pkl"
+VECTORIZER_PATH = BASE_DIR / "vectorizer.pkl"
+RESPONSES_PATH = BASE_DIR / "responses.pkl"
 
 
 def train_and_save():

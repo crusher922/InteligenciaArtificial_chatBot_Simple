@@ -1,67 +1,61 @@
 import json
-import re
+from pathlib import Path
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-# =========================
-# 1. Limpieza de texto
-# =========================
-def limpiar_texto(texto):
-    """
-    Normaliza el texto para el modelo de NLP
-    """
-    texto = texto.lower()
-    texto = texto.strip()
-    texto = re.sub(r"[^\w\s]", "", texto)  # elimina puntuación
-    return texto
+BASE_DIR = Path(__file__).resolve().parent
+DATASET_PATH = BASE_DIR / "dataset.json"
 
 
-# =========================
-# 2. Cargar dataset de intents
-# =========================
-def cargar_dataset(ruta="dataset.json"):
-    """
-    Convierte el dataset de intents en pares (texto, etiqueta)
-    """
-    with open(ruta, "r", encoding="utf-8") as archivo:
-        datos = json.load(archivo)
+def load_dataset(dataset_path=DATASET_PATH):
+    with open(dataset_path, "r", encoding="utf-8") as file:
+        data = json.load(file)
 
-    textos = []
-    etiquetas = []
+    texts = []
+    labels = []
+    responses = {}
 
-    for intent in datos["intents"]:
+    for intent in data["intents"]:
         tag = intent["tag"]
+        responses[tag] = intent["responses"]
 
-        for patron in intent["patterns"]:
-            texto_limpio = limpiar_texto(patron)
-            textos.append(texto_limpio)
-            etiquetas.append(tag)
+        for pattern in intent["patterns"]:
+            texts.append(pattern.lower().strip())
+            labels.append(tag)
 
-    return textos, etiquetas
-
-
-# =========================
-# 3. Obtener respuestas por intención
-# =========================
-def cargar_respuestas(ruta="dataset.json"):
-    """
-    Crea un diccionario de respuestas por intención
-    """
-    with open(ruta, "r", encoding="utf-8") as archivo:
-        datos = json.load(archivo)
-
-    respuestas = {}
-
-    for intent in datos["intents"]:
-        respuestas[intent["tag"]] = intent["responses"]
-
-    return respuestas
+    return texts, labels, responses
 
 
-# =========================
-# 4. Preprocesar texto del usuario
-# =========================
-def preprocesar_mensaje(mensaje):
-    """
-    Limpia el mensaje del usuario antes de enviarlo al modelo
-    """
-    return limpiar_texto(mensaje)
+def prepare_data(test_size=0.3, random_state=42):
+    texts, labels, responses = load_dataset()
+
+    X_train_texts, X_test_texts, y_train, y_test = train_test_split(
+        texts,
+        labels,
+        test_size=test_size,
+        random_state=random_state,
+        stratify=labels
+    )
+
+    vectorizer = TfidfVectorizer(lowercase=True)
+    X_train = vectorizer.fit_transform(X_train_texts)
+    X_test = vectorizer.transform(X_test_texts)
+
+    return {
+        "X_train_texts": X_train_texts,
+        "X_test_texts": X_test_texts,
+        "y_train": y_train,
+        "y_test": y_test,
+        "X_train": X_train,
+        "X_test": X_test,
+        "vectorizer": vectorizer,
+        "responses": responses
+    }
+
+
+if __name__ == "__main__":
+    data = prepare_data()
+    print("Datos de entrenamiento:", len(data["X_train_texts"]))
+    print("Datos de prueba:", len(data["X_test_texts"]))
+    print("Etiquetas:", sorted(set(data["y_train"] + data["y_test"])))

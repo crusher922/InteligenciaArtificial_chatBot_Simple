@@ -7,3 +7,12 @@
 2026-03-15 21:58:17,554 | INFO | Entrada usuario: hola | Intención detectada: saludo
 2026-03-15 21:58:27,954 | INFO | Entrada usuario: que cursos ofrecen | Intención detectada: cursos
 2026-03-15 21:58:34,880 | INFO | Usuario finalizó la conversación.
+2026-03-15 22:04:27,817 | INFO | Cargando y preparando datos.
+2026-03-15 22:04:27,821 | INFO | Entrenando modelo MultinomialNB.
+2026-03-15 22:04:27,823 | INFO | Modelo, vectorizador y respuestas guardados.
+2026-03-15 22:04:42,266 | INFO | Inicio de evaluación del modelo.
+2026-03-15 22:04:42,272 | INFO | Evaluación completada y resultados guardados.
+2026-03-15 22:05:10,799 | INFO | Chatbot iniciado correctamente.
+2026-03-15 22:05:30,486 | INFO | Entrada usuario: horaios de atención | Intención detectada: cursos
+2026-03-15 22:07:54,519 | INFO | Entrada usuario: dime tu edad | Intención detectada: cursos
+2026-03-15 22:24:52,078 | INFO | Usuario finalizó la conversación.

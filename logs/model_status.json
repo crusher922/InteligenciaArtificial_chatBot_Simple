@@ -1,6 +1,6 @@
 {
     "status": "trained",
-    "last_update": "2026-03-15T21:57:47.195558",
-    "model_path": "/home/francisco/Desarrollo/Python/InteligenciaArtificial/chatbot/model.pkl",
+    "last_update": "2026-03-15T22:04:27.824092",
+    "model_path": "/Users/q1000403/Documents/Desarrollo/scriptsPY/IntelegenciaArtificial_20260310/InteligenciaArtificial_chatBot_Simple/model.pkl",
     "checkpoint_available": true
 }

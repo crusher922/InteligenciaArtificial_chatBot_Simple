@@ -1,0 +1,79 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "hola",
+        "buenos dias",
+        "buenas tardes",
+        "que tal",
+        "hola chatbot",
+        "hey",
+        "holi"
+      ],
+      "responses": [
+        "Hola, ¿en qué puedo ayudarte?",
+        "¡Hola! Estoy aquí para ayudarte.",
+        "Buenas, dime tu consulta."
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "adios",
+        "hasta luego",
+        "nos vemos",
+        "chao",
+        "bye",
+        "hasta pronto"
+      ],
+      "responses": [
+        "Hasta luego.",
+        "¡Adiós! Que tengas un buen día.",
+        "Nos vemos pronto."
+      ]
+    },
+    {
+      "tag": "horario",
+      "patterns": [
+        "cual es el horario",
+        "a que hora atienden",
+        "cuando abren",
+        "cuando cierran",
+        "horario de atencion"
+      ],
+      "responses": [
+        "Nuestro horario de atención es de lunes a viernes de 8:00 a 17:00.",
+        "Atendemos de lunes a viernes, de 8 de la mañana a 5 de la tarde."
+      ]
+    },
+    {
+      "tag": "cursos",
+      "patterns": [
+        "que cursos ofrecen",
+        "tienen cursos de python",
+        "que puedo estudiar",
+        "ofrecen capacitaciones",
+        "hay cursos disponibles"
+      ],
+      "responses": [
+        "Ofrecemos cursos de Python, desarrollo web y bases de datos.",
+        "Tenemos capacitaciones en programación, diseño web y análisis de datos."
+      ]
+    },
+    {
+      "tag": "contacto",
+      "patterns": [
+        "como los contacto",
+        "cual es su correo",
+        "numero de telefono",
+        "donde estan ubicados",
+        "como puedo comunicarme"
+      ],
+      "responses": [
+        "Puedes contactarnos al correo: info@ejemplo.com",
+        "Nuestro número de contacto es 0999999999."
+      ]
+    }
+  ]
+}

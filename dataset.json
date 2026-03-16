@@ -1,79 +1,139 @@
 {
-  "intents": [
-    {
-      "tag": "saludo",
-      "patterns": [
-        "hola",
-        "buenos dias",
-        "buenas tardes",
-        "que tal",
-        "hola chatbot",
-        "hey",
-        "holi"
-      ],
-      "responses": [
-        "Hola, ¿en qué puedo ayudarte?",
-        "¡Hola! Estoy aquí para ayudarte.",
-        "Buenas, dime tu consulta."
-      ]
-    },
-    {
-      "tag": "despedida",
-      "patterns": [
-        "adios",
-        "hasta luego",
-        "nos vemos",
-        "chao",
-        "bye",
-        "hasta pronto"
-      ],
-      "responses": [
-        "Hasta luego.",
-        "¡Adiós! Que tengas un buen día.",
-        "Nos vemos pronto."
-      ]
-    },
-    {
-      "tag": "horario",
-      "patterns": [
-        "cual es el horario",
-        "a que hora atienden",
-        "cuando abren",
-        "cuando cierran",
-        "horario de atencion"
-      ],
-      "responses": [
-        "Nuestro horario de atención es de lunes a viernes de 8:00 a 17:00.",
-        "Atendemos de lunes a viernes, de 8 de la mañana a 5 de la tarde."
-      ]
-    },
-    {
-      "tag": "cursos",
-      "patterns": [
-        "que cursos ofrecen",
-        "tienen cursos de python",
-        "que puedo estudiar",
-        "ofrecen capacitaciones",
-        "hay cursos disponibles"
-      ],
-      "responses": [
-        "Ofrecemos cursos de Python, desarrollo web y bases de datos.",
-        "Tenemos capacitaciones en programación, diseño web y análisis de datos."
-      ]
-    },
-    {
-      "tag": "contacto",
-      "patterns": [
-        "como los contacto",
-        "cual es su correo",
-        "numero de telefono",
-        "donde estan ubicados",
-        "como puedo comunicarme"
-      ],
-      "responses": [
-        "Puedes contactarnos al correo: info@ejemplo.com",
-        "Nuestro número de contacto es 0999999999."
-      ]
-    }
-  ]
-}
+    "intents": [
+      {
+        "tag": "saludo",
+        "patterns": [
+          "hola",
+          "buenos dias",
+          "buenas tardes",
+          "que tal",
+          "hola chatbot",
+          "hey",
+          "holi",
+          "hola que tal",
+          "buen dia",
+          "buenas",
+          "saludos",
+          "hola amigo",
+          "hola como estas",
+          "hola buenas",
+          "hey chatbot",
+          "buenas noches",
+          "hola hola",
+          "que hay",
+          "que tal estas",
+          "hola buen dia"
+        ],
+        "responses": [
+          "Hola, ¿en qué puedo ayudarte?",
+          "¡Hola! Estoy aquí para ayudarte.",
+          "Buenas, dime tu consulta.",
+          "Hola, ¿qué necesitas saber?",
+          "¡Saludos! ¿Cómo puedo ayudarte hoy?"
+        ]
+      },
+      {
+        "tag": "despedida",
+        "patterns": [
+          "adios",
+          "hasta luego",
+          "nos vemos",
+          "chao",
+          "bye",
+          "hasta pronto",
+          "me voy",
+          "gracias adios",
+          "hasta la proxima",
+          "nos vemos luego",
+          "me despido",
+          "hasta mañana",
+          "ok adios",
+          "nos vemos pronto",
+          "bueno adios",
+          "listo gracias adios"
+        ],
+        "responses": [
+          "Hasta luego.",
+          "¡Adiós! Que tengas un buen día.",
+          "Nos vemos pronto.",
+          "Que tengas un excelente día.",
+          "Hasta pronto, aquí estaré si necesitas ayuda."
+        ]
+      },
+      {
+        "tag": "horario",
+        "patterns": [
+          "cual es el horario",
+          "a que hora atienden",
+          "cuando abren",
+          "cuando cierran",
+          "horario de atencion",
+          "me puedes decir el horario",
+          "que horario tienen",
+          "a que hora abren",
+          "a que hora cierran",
+          "cuando puedo ir",
+          "horario del centro",
+          "cuando estan abiertos",
+          "cuando atienden",
+          "horas de atencion",
+          "horario del servicio"
+        ],
+        "responses": [
+          "Nuestro horario de atención es de lunes a viernes de 8:00 a 17:00.",
+          "Atendemos de lunes a viernes, de 8 de la mañana a 5 de la tarde.",
+          "Estamos disponibles de lunes a viernes de 08:00 a 17:00."
+        ]
+      },
+      {
+        "tag": "cursos",
+        "patterns": [
+          "que cursos ofrecen",
+          "tienen cursos de python",
+          "que puedo estudiar",
+          "ofrecen capacitaciones",
+          "hay cursos disponibles",
+          "que cursos tienen",
+          "quiero estudiar programacion",
+          "tienen cursos de programacion",
+          "hay cursos de tecnologia",
+          "que capacitaciones ofrecen",
+          "tienen clases de python",
+          "ofrecen cursos de desarrollo web",
+          "que puedo aprender aqui",
+          "hay clases disponibles",
+          "donde puedo aprender programacion"
+        ],
+        "responses": [
+          "Ofrecemos cursos de Python, desarrollo web y bases de datos.",
+          "Tenemos capacitaciones en programación, diseño web y análisis de datos.",
+          "Puedes aprender Python, desarrollo web y fundamentos de bases de datos con nosotros."
+        ]
+      },
+      {
+        "tag": "contacto",
+        "patterns": [
+          "como los contacto",
+          "cual es su correo",
+          "numero de telefono",
+          "donde estan ubicados",
+          "como puedo comunicarme",
+          "tienen telefono",
+          "me pueden dar su correo",
+          "como me comunico con ustedes",
+          "como puedo contactarlos",
+          "donde queda su oficina",
+          "tienen direccion",
+          "cual es su numero",
+          "como hablar con ustedes",
+          "me puedes dar el telefono",
+          "como llego a su oficina"
+        ],
+        "responses": [
+          "Puedes contactarnos al correo: info@ejemplo.com",
+          "Nuestro número de contacto es 0999999999.",
+          "Puedes escribirnos al correo info@ejemplo.com o llamarnos al 0999999999."
+        ]
+      }
+    ]
+  }

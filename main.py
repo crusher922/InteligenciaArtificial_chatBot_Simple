@@ -1,6 +1,8 @@
 import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 # =========================
 # 1. Datos de entrenamiento
@@ -41,19 +43,69 @@ textos = [texto for texto, intencion in datos_entrenamiento]
 etiquetas = [intencion for texto, intencion in datos_entrenamiento]
 
 # =========================
-# 2. Vectorización del texto
+# 2. División de datos
+# =========================
+X_train_textos, X_test_textos, y_train, y_test = train_test_split(
+    textos, etiquetas, test_size=0.3, random_state=42
+)
+
+# =========================
+# 3. Vectorización y entrenamiento
 # =========================
 vectorizador = TfidfVectorizer()
-X = vectorizador.fit_transform(textos)
+X_train = vectorizador.fit_transform(X_train_textos)
+X_test = vectorizador.transform(X_test_textos)
 
-# =========================
-# 3. Entrenamiento del modelo
-# =========================
 modelo = MultinomialNB()
-modelo.fit(X, etiquetas)
+modelo.fit(X_train, y_train)
 
 # =========================
-# 4. Respuestas por intención
+# 4. Evaluación del modelo
+# =========================
+y_pred = modelo.predict(X_test)
+
+accuracy = accuracy_score(y_test, y_pred)
+matriz = confusion_matrix(y_test, y_pred)
+reporte = classification_report(y_test, y_pred)
+
+print("===== EVALUACIÓN DEL MODELO =====")
+print(f"Accuracy del modelo: {accuracy:.2f}\n")
+
+print("Matriz de confusión:")
+print(matriz)
+print()
+
+print("Reporte de clasificación:")
+print(reporte)
+
+# =========================
+# 5. Ejemplos de predicción
+# =========================
+print("\n===== EJEMPLOS DE PREDICCIÓN =====")
+for texto, real, predicho in zip(X_test_textos, y_test, y_pred):
+    print(f"Texto: '{texto}'")
+    print(f"Etiqueta real: {real}")
+    print(f"Predicción: {predicho}")
+    print("-" * 40)
+
+# =========================
+# 6. Errores del modelo
+# =========================
+print("\n===== ERRORES DEL MODELO =====")
+hubo_error = False
+
+for texto, real, predicho in zip(X_test_textos, y_test, y_pred):
+    if real != predicho:
+        hubo_error = True
+        print(f"Texto: '{texto}'")
+        print(f"Real: {real} | Predicho: {predicho}")
+        print("-" * 40)
+
+if not hubo_error:
+    print("No hubo errores en este conjunto de prueba.")
+
+# =========================
+# 7. Respuestas por intención
 # =========================
 respuestas = {
     "saludo": [
@@ -81,7 +133,7 @@ respuestas = {
 }
 
 # =========================
-# 5. Función del chatbot
+# 8. Función de respuesta
 # =========================
 def responder(mensaje):
     mensaje_vectorizado = vectorizador.transform([mensaje])
@@ -89,9 +141,9 @@ def responder(mensaje):
     return random.choice(respuestas[intencion_predicha])
 
 # =========================
-# 6. Conversación interactiva
+# 9. Chat interactivo
 # =========================
-print("Chatbot iniciado. Escribe 'salir' para terminar.\n")
+print("\nChatbot iniciado. Escribe 'salir' para terminar.\n")
 
 while True:
     usuario = input("Tú: ").lower().strip()

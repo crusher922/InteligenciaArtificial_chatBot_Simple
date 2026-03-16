@@ -34,3 +34,24 @@ Este proyecto fue desarrollado como parte de la asignatura de **Inteligencia Art
 
 El funcionamiento del chatbot sigue el siguiente flujo:
 Datos → Preprocesamiento → Vectorización → Modelo → Evaluación → Motor de respuestas → Interfaz chatbot
+
+---
+# Como ejecutar el proyecto
+## Entrenar el modelo
+python train_model.py
+
+## Evaluar el modelo
+python evaluate_model.py
+
+## Generar gráficas
+python plot_results.py
+
+## Generar dashboard
+python generate_dashboard.py
+
+## Abrir dashboard
+dashboard.html
+
+## Ejecutar el chatbot
+python chatbot.py
+

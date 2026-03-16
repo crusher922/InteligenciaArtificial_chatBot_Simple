@@ -16,3 +16,32 @@
 2026-03-15 22:05:30,486 | INFO | Entrada usuario: horaios de atención | Intención detectada: cursos
 2026-03-15 22:07:54,519 | INFO | Entrada usuario: dime tu edad | Intención detectada: cursos
 2026-03-15 22:24:52,078 | INFO | Usuario finalizó la conversación.
+2026-03-15 22:27:48,197 | INFO | Cargando y preparando datos.
+2026-03-15 22:27:48,201 | INFO | Entrenando modelo MultinomialNB.
+2026-03-15 22:27:48,202 | INFO | Modelo, vectorizador y respuestas guardados.
+2026-03-15 22:28:10,394 | INFO | Inicio de evaluación del modelo.
+2026-03-15 22:28:10,399 | INFO | Evaluación completada y resultados guardados.
+2026-03-15 22:28:47,048 | INFO | Chatbot iniciado correctamente.
+2026-03-15 22:28:51,228 | INFO | Entrada usuario: hola | Intención detectada: saludo
+2026-03-15 22:30:59,675 | INFO | Entrada usuario: solo | Intención detectada: cursos
+2026-03-15 22:31:11,590 | INFO | Entrada usuario: jjj | Intención detectada: cursos
+2026-03-15 22:32:10,763 | INFO | Usuario finalizó la conversación.
+2026-03-15 22:32:32,888 | INFO | Cargando y preparando datos.
+2026-03-15 22:32:32,892 | INFO | Entrenando modelo MultinomialNB.
+2026-03-15 22:32:32,894 | INFO | Modelo, vectorizador y respuestas guardados.
+2026-03-15 22:32:40,425 | INFO | Inicio de evaluación del modelo.
+2026-03-15 22:32:40,430 | INFO | Evaluación completada y resultados guardados.
+2026-03-15 22:32:50,290 | INFO | Chatbot iniciado correctamente.
+2026-03-15 22:32:53,006 | INFO | Entrada usuario: hola | Intención detectada: saludo
+2026-03-15 22:33:09,027 | INFO | Entrada usuario: necesito indformacion | Intención detectada: saludo
+2026-03-15 22:33:15,282 | INFO | Entrada usuario: dime los cursos | Intención detectada: cursos
+2026-03-15 22:33:19,007 | INFO | Entrada usuario: el horario | Intención detectada: horario
+2026-03-15 22:33:23,278 | INFO | Entrada usuario: de todo | Intención detectada: cursos
+2026-03-15 22:33:26,502 | INFO | Entrada usuario: git status | Intención detectada: cursos
+2026-03-15 22:33:44,694 | INFO | Cargando y preparando datos.
+2026-03-15 22:33:44,697 | INFO | Entrenando modelo MultinomialNB.
+2026-03-15 22:33:44,698 | INFO | Modelo, vectorizador y respuestas guardados.
+2026-03-15 22:33:49,524 | INFO | Inicio de evaluación del modelo.
+2026-03-15 22:33:49,529 | INFO | Evaluación completada y resultados guardados.
+2026-03-15 22:34:25,174 | INFO | Inicio de evaluación del modelo.
+2026-03-15 22:34:25,179 | INFO | Evaluación completada y resultados guardados.

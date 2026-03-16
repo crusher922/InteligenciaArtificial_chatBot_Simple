@@ -9,12 +9,40 @@
         "que tal",
         "hola chatbot",
         "hey",
-        "holi"
+        "holi",
+        "hola que tal",
+        "buen dia",
+        "buenas",
+        "saludos",
+        "hola amigo",
+        "hola como estas",
+        "hola buenas",
+        "hey chatbot",
+        "buenas noches",
+        "hola hola",
+        "que hay",
+        "que tal estas",
+        "hola buen dia",
+        "muy buenas",
+        "buen provecho",
+        "que mas",
+        "como estas",
+        "hola ahi",
+        "buenas como van",
+        "hola necesito ayuda",
+        "buen dia como estan",
+        "hola estoy aqui",
+        "que onda"
       ],
       "responses": [
         "Hola, ¿en qué puedo ayudarte?",
         "¡Hola! Estoy aquí para ayudarte.",
-        "Buenas, dime tu consulta."
+        "Buenas, dime tu consulta.",
+        "Hola, ¿qué necesitas saber?",
+        "¡Saludos! ¿Cómo puedo ayudarte hoy?",
+        "¡Hola! Con gusto te atiendo.",
+        "Bienvenido, ¿en qué te puedo ayudar?",
+        "¡Buenas! Dime, ¿qué necesitas?"
       ]
     },
     {
@@ -25,12 +53,36 @@
         "nos vemos",
         "chao",
         "bye",
-        "hasta pronto"
+        "hasta pronto",
+        "me voy",
+        "gracias adios",
+        "hasta la proxima",
+        "nos vemos luego",
+        "me despido",
+        "hasta mañana",
+        "ok adios",
+        "nos vemos pronto",
+        "bueno adios",
+        "listo gracias adios",
+        "me retiro",
+        "gracias por todo adios",
+        "listo ya me voy",
+        "chao chao",
+        "hasta luego gracias",
+        "bye bye",
+        "me despido gracias",
+        "fue un placer adios",
+        "ya estuvo gracias"
       ],
       "responses": [
         "Hasta luego.",
         "¡Adiós! Que tengas un buen día.",
-        "Nos vemos pronto."
+        "Nos vemos pronto.",
+        "Que tengas un excelente día.",
+        "Hasta pronto, aquí estaré si necesitas ayuda.",
+        "¡Hasta luego! Fue un placer atenderte.",
+        "Que te vaya muy bien, ¡hasta pronto!",
+        "Cuídate mucho, ¡adiós!"
       ]
     },
     {
@@ -40,11 +92,34 @@
         "a que hora atienden",
         "cuando abren",
         "cuando cierran",
-        "horario de atencion"
+        "horario de atencion",
+        "me puedes decir el horario",
+        "que horario tienen",
+        "a que hora abren",
+        "a que hora cierran",
+        "cuando puedo ir",
+        "horario del centro",
+        "cuando estan abiertos",
+        "cuando atienden",
+        "horas de atencion",
+        "horario del servicio",
+        "atienden los sabados",
+        "atienden los domingos",
+        "atienden fines de semana",
+        "tienen horario extendido",
+        "a que hora puedo llamar",
+        "hasta que hora atienden",
+        "desde que hora atienden",
+        "atienden en la tarde",
+        "hay atencion en la mañana",
+        "que dias trabajan"
       ],
       "responses": [
         "Nuestro horario de atención es de lunes a viernes de 8:00 a 17:00.",
-        "Atendemos de lunes a viernes, de 8 de la mañana a 5 de la tarde."
+        "Atendemos de lunes a viernes, de 8 de la mañana a 5 de la tarde.",
+        "Estamos disponibles de lunes a viernes de 08:00 a 17:00.",
+        "Trabajamos de lunes a viernes de 8:00 a 17:00, no atendemos fines de semana.",
+        "Puedes visitarnos o llamarnos de lunes a viernes entre las 8:00 y las 17:00."
       ]
     },
     {
@@ -54,11 +129,40 @@
         "tienen cursos de python",
         "que puedo estudiar",
         "ofrecen capacitaciones",
-        "hay cursos disponibles"
+        "hay cursos disponibles",
+        "que cursos tienen",
+        "quiero estudiar programacion",
+        "tienen cursos de programacion",
+        "hay cursos de tecnologia",
+        "que capacitaciones ofrecen",
+        "tienen clases de python",
+        "ofrecen cursos de desarrollo web",
+        "que puedo aprender aqui",
+        "hay clases disponibles",
+        "donde puedo aprender programacion",
+        "tienen cursos de inteligencia artificial",
+        "hay cursos de ciencia de datos",
+        "ofrecen curso de machine learning",
+        "tienen cursos para principiantes",
+        "hay cursos avanzados",
+        "que niveles tienen los cursos",
+        "los cursos son presenciales",
+        "los cursos son en linea",
+        "tienen cursos virtuales",
+        "cuanto dura un curso",
+        "tienen cursos cortos",
+        "que aprendo en el curso de python",
+        "hay cursos de sql",
+        "tienen cursos de excel",
+        "ofrecen cursos de diseño"
       ],
       "responses": [
         "Ofrecemos cursos de Python, desarrollo web y bases de datos.",
-        "Tenemos capacitaciones en programación, diseño web y análisis de datos."
+        "Tenemos capacitaciones en programación, diseño web y análisis de datos.",
+        "Puedes aprender Python, desarrollo web y fundamentos de bases de datos con nosotros.",
+        "Contamos con cursos para principiantes y niveles avanzados en programación y tecnología.",
+        "Ofrecemos cursos presenciales y virtuales en Python, SQL, diseño web y más.",
+        "Nuestro catálogo incluye Python, desarrollo web, bases de datos, Excel y análisis de datos."
       ]
     },
     {
@@ -68,11 +172,184 @@
         "cual es su correo",
         "numero de telefono",
         "donde estan ubicados",
-        "como puedo comunicarme"
+        "como puedo comunicarme",
+        "tienen telefono",
+        "me pueden dar su correo",
+        "como me comunico con ustedes",
+        "como puedo contactarlos",
+        "donde queda su oficina",
+        "tienen direccion",
+        "cual es su numero",
+        "como hablar con ustedes",
+        "me puedes dar el telefono",
+        "como llego a su oficina",
+        "tienen whatsapp",
+        "me pueden dar el whatsapp",
+        "tienen redes sociales",
+        "como los encuentro en instagram",
+        "tienen facebook",
+        "me pueden dar un correo de contacto",
+        "a quien puedo escribir",
+        "hay alguien con quien hablar",
+        "puedo llamarlos",
+        "tienen atencion por chat"
       ],
       "responses": [
         "Puedes contactarnos al correo: info@ejemplo.com",
-        "Nuestro número de contacto es 0999999999."
+        "Nuestro número de contacto es 0999999999.",
+        "Puedes escribirnos al correo info@ejemplo.com o llamarnos al 0999999999.",
+        "También puedes encontrarnos en nuestras redes sociales como @ejemplo.",
+        "Contáctanos por correo, teléfono o a través de nuestras redes sociales."
+      ]
+    },
+    {
+      "tag": "precios",
+      "patterns": [
+        "cuanto cuestan los cursos",
+        "cual es el precio",
+        "cuanto vale la capacitacion",
+        "tienen precios accesibles",
+        "son caros los cursos",
+        "cuanto cuesta inscribirse",
+        "hay descuentos",
+        "tienen promociones",
+        "cuanto vale el curso de python",
+        "cual es la tarifa",
+        "tienen planes de pago",
+        "se puede pagar a cuotas",
+        "cuanto es la matricula",
+        "tienen becas",
+        "hay precio especial para estudiantes",
+        "cuanto debo pagar",
+        "tienen algun descuento",
+        "los cursos son gratuitos",
+        "tienen cursos gratis",
+        "hay algun costo"
+      ],
+      "responses": [
+        "Los precios varían según el curso. Te recomiendo contactarnos para más detalles.",
+        "Contamos con planes de pago accesibles y promociones periódicas.",
+        "Puedes consultarnos al correo info@ejemplo.com para conocer los precios actualizados.",
+        "Tenemos opciones de pago en cuotas para que puedas acceder más fácilmente.",
+        "Contáctanos y te informamos sobre precios, descuentos y becas disponibles."
+      ]
+    },
+    {
+      "tag": "inscripcion",
+      "patterns": [
+        "como me inscribo",
+        "como me matriculo",
+        "quiero inscribirme",
+        "donde me registro",
+        "como puedo inscribirme en un curso",
+        "como hago para matricularme",
+        "que necesito para inscribirme",
+        "como inicio el proceso de inscripcion",
+        "puedo inscribirme en linea",
+        "hay inscripcion online",
+        "como me registro en el sistema",
+        "que documentos necesito para inscribirme",
+        "inscripcion disponible",
+        "quiero empezar un curso",
+        "como empiezo",
+        "cuando puedo inscribirme",
+        "hay cupos disponibles",
+        "como reservo mi cupo",
+        "cuantos cupos quedan",
+        "inscripciones abiertas"
+      ],
+      "responses": [
+        "Puedes inscribirte contactándonos al correo info@ejemplo.com o llamando al 0999999999.",
+        "El proceso de inscripción es sencillo: contáctanos y te guiamos paso a paso.",
+        "Las inscripciones están abiertas. Escríbenos y te indicamos los requisitos.",
+        "Puedes registrarte en línea o de forma presencial en nuestra oficina.",
+        "Para inscribirte solo necesitas tu documento de identidad y completar el formulario de registro."
+      ]
+    },
+    {
+      "tag": "certificacion",
+      "patterns": [
+        "dan certificado",
+        "entregan certificados",
+        "hay certificacion al finalizar",
+        "el curso tiene certificado",
+        "me dan algun diploma",
+        "que obtengo al terminar el curso",
+        "los certificados son validos",
+        "el certificado tiene valor",
+        "certificado oficial",
+        "tienen acreditacion",
+        "el certificado es reconocido",
+        "puedo usar el certificado en mi trabajo",
+        "como obtengo el certificado",
+        "cuando me entregan el certificado",
+        "el diploma es digital o fisico"
+      ],
+      "responses": [
+        "Sí, al finalizar el curso recibes un certificado de aprobación.",
+        "Entregamos certificados digitales al completar cada curso satisfactoriamente.",
+        "Nuestros certificados son emitidos por la institución y son válidos como aval de capacitación.",
+        "Al aprobar el curso recibirás tu certificado, ya sea digital o físico según prefieras.",
+        "Los certificados se entregan al finalizar y cumplir los requisitos del curso."
+      ]
+    },
+    {
+      "tag": "soporte",
+      "patterns": [
+        "tengo un problema",
+        "necesito ayuda",
+        "algo no funciona",
+        "tengo un inconveniente",
+        "hay un error",
+        "no puedo acceder",
+        "no me deja entrar",
+        "tengo un problema con mi cuenta",
+        "no funciona la plataforma",
+        "necesito soporte tecnico",
+        "hay falla en el sistema",
+        "no puedo ver el curso",
+        "tengo problemas con el pago",
+        "no recibo el correo de confirmacion",
+        "me aparece un error",
+        "no puedo descargar el material",
+        "la pagina no carga",
+        "tengo dificultades tecnicas",
+        "necesito asistencia",
+        "no puedo iniciar sesion"
+      ],
+      "responses": [
+        "Lamentamos el inconveniente. Por favor escríbenos a info@ejemplo.com y lo resolveremos.",
+        "Para soporte técnico puedes llamarnos al 0999999999 en horario de atención.",
+        "Cuéntanos tu problema y te ayudamos a solucionarlo lo antes posible.",
+        "Nuestro equipo de soporte está disponible de lunes a viernes de 8:00 a 17:00.",
+        "Envíanos los detalles del problema al correo info@ejemplo.com para darte seguimiento."
+      ]
+    },
+    {
+      "tag": "agradecimiento",
+      "patterns": [
+        "gracias",
+        "muchas gracias",
+        "te lo agradezco",
+        "gracias por la ayuda",
+        "gracias por responder",
+        "muy amable gracias",
+        "gracias por la informacion",
+        "te agradezco mucho",
+        "genial gracias",
+        "perfecto gracias",
+        "listo gracias",
+        "ok gracias",
+        "excelente gracias",
+        "mil gracias",
+        "gracias de verdad"
+      ],
+      "responses": [
+        "¡Con gusto! ¿Hay algo más en lo que pueda ayudarte?",
+        "Para eso estoy, ¡no dudes en preguntar!",
+        "Es un placer ayudarte.",
+        "¡De nada! Si necesitas más información, aquí estaré.",
+        "Gracias a ti, ¡que tengas un excelente día!"
       ]
     }
   ]
